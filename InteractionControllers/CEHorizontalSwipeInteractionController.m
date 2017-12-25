@@ -54,7 +54,8 @@ const NSString *kCEHorizontalSwipeGestureKey = @"kCEHorizontalSwipeGestureKey";
     switch (gestureRecognizer.state) {
         case UIGestureRecognizerStateBegan: {
             
-            BOOL rightToLeftSwipe = vel.x < 0;
+            //控制手势滑动的方向
+            BOOL rightToLeftSwipe = vel.x > 0;
             
             // perform the required navigation operation ...
             
